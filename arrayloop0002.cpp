@@ -2,8 +2,8 @@
 #include <algorithm>
 
 int main () {
-
- for ( i = 0; i < 5; i++) {
+ using namespace std;
+ for (int i = 0; i < 5; i++) {
      
    }  
 }

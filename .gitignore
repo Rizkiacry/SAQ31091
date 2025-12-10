@@ -1,0 +1,14 @@
+# Build artifacts
+/build/
+*.exe
+CMakeCache.txt
+CMakeFiles/
+
+# Documents
+*.docx
+*.png
+*.md
+*.txt
+
+# Other
+~$*

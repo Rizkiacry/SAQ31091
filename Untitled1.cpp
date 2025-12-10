@@ -1,8 +1,10 @@
 #include <iostream>
-using namespace std ;
+
+using namespace std;
+
 #define MAX 5
 
-int queue [MAX] ;
+int my_queue [MAX] ;
 int front = -1;
 int rear = -1 ;
 
@@ -16,12 +18,13 @@ bool penuh (){
 void enqueue(int nilai){
 	if (penuh()){
 		cout << "Queue penuh!! tidak dapat menanbah elemen" << endl;
+        return;
 	}
 	
 	if (kosong ()){
 		front = 0;
 	}
-	queue [++rear] = nilai ;
+	my_queue [++rear] = nilai ;
 	cout << "elemen" << nilai << "berhasil ditambahkan ke queue" << endl;
 }
 
@@ -32,13 +35,13 @@ int dequeue (){
 	} 
 	
 	
-	int nilai = queue [front]
+	int nilai = my_queue [front];
 	if (front == rear ){
-		front == rear=-1;
+		front = rear = -1;
 	}else{
 		front++;
 	}
-	return nilai ++;
+	return nilai;
 	
 }
 
@@ -47,12 +50,23 @@ int peek (){
 		cout <<"Queue kosong!! tidak ada elemen depan"<< endl;
 		return -1;
 	} 
-	return queue[front];
+	return my_queue[front];
  } 
  
+ /*
  void display (){
  	if (kosong()){
  		cout<< ""
 	 }
  }
+*/
 
+int main() {
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
+    cout << "Front element is: " << peek() << endl;
+    cout << "Dequeued element is: " << dequeue() << endl;
+    cout << "Front element is now: " << peek() << endl;
+    return 0;
+}
