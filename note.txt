@@ -1,0 +1,43 @@
+Identifikasi masalah
+ Kondisi awal
+Kondisi akhir
+Data
+Operator
+Syarat dan kendala
+
+Top down = modules -> wrap
+
+
+Algoritma
+
+Urutan?alur pemikiran?langkah2?logis utk menyelesaikan masalah
+
+
+Ada output
+Efektif dan efisien
+Jumlah langkah berhingga
+Berakhir -> SEMI algoritma
+Terstruktur
+
+Dasar2 algoritma
+Proses
+Instruksi
+Aksi
+
+Language
+Syntax
+Logical
+
+Terminal 
+System defined process
+Input/output
+Process
+decision
+
+
+looping
+while do cek dulu min 0
+do while kerjakan dulu min 1 
+for increment next (small TO big) iteration is known
+
+
